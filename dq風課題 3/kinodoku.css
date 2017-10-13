@@ -1,0 +1,113 @@
+.okinodoku{
+	background-color: black;
+	color: white;
+}
+a {text-decoration: none;
+	color: white;
+}
+
+.title{
+	font-size: 48px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 5px;
+	margin: 250px auto;
+	opacity: 0;
+	animation-name: anime1;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	
+}
+@keyframes anime1{
+	0%{opacity: 0;}
+	50%{opacity: 1.0;}
+	100%{opacity: 0;}
+}
+
+
+@keyframes anime2{
+	0%{opacity: 1.0;}
+	100%{opacity: 0;}
+	
+}
+
+
+.monolog{
+	margin: 105px auto;
+	border:solid 4px white;
+	border-radius: 5px;
+	vertical-align: bottom;
+	width:800px;
+	height: 110px;
+	opacity: 0;
+}
+/*
+	animation-name: anime3;
+	animation-duration: 0s;
+	animation-delay: 10s;
+}
+*/
+
+p{
+	text-align: center;
+position: relative;
+bottom: 10px;
+}
+
+.blinking {
+    -webkit-animation: 0.3s linear 0s alternate none infinite running blink;
+    -moz-animation: 0.5s linear 0s alternate none infinite running blink;
+    animation: 0.5s linear 0s alternate none infinite running blink;
+}
+@-webkit-keyframes blink {
+    0% { opacity: 0; }
+    19.9% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 0; }
+    19.9% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { opacity: 1; }
+}
+@keyframes blink {
+    0% { opacity: 0; }
+    19.9% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+
+.g{background-color: #669933;}
+
+
+.g h2{
+	font-size: 100px;
+	border: solid 16px black;
+	border-radius: 65px;
+	color: black;
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	animation: anime3;
+	animation: 
+
+/*
+	animation-name: anime3;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	
+*/
+}
+@keyframes anime3{
+	100%{opacity: 0;}
+}
+
+
+#prologue{
+	position: relative;
+	bottom: 200px;
+}

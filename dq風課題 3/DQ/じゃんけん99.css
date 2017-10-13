@@ -1,0 +1,105 @@
+.hp{
+	border:solid 4px white;
+	height: 150px;
+	width: 150px;
+	border-radius: 5px;
+	position: fixed;
+	margin-left: 25px;
+}
+.hp table{
+	margin:10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#battlefield{
+	height: 200px;
+	width:300px;
+	margin: 0 auto;
+
+}
+#battlefield img{
+	height: 180px;
+	width: 180px;
+	margin: 150px auto;
+}
+
+#massage1
+{
+	zoom: 4;
+}
+
+#mess{
+	text-align:;
+	zoom: 5;
+}
+
+body{
+	text-align: center;
+	font-size: 16px
+}
+
+
+#menu0{
+	height: 180px;
+	border: solid white 4px;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left;
+	margin-top: 190px;
+	margin-left: 25px;
+	position: fixed;
+}
+#menu0 li{margin-top: 5px;}
+
+
+#menu{
+	visibility: hidden;
+	border: solid white 4px;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left;
+	margin-top: 190px;
+	margin-left: 25px;
+	position: fixed;
+	z-index: 2;
+	opacity: 1;
+	background-color: black;
+}
+
+#menu ul{
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+#target{
+	height: 70px;
+	font-size: 20px;
+	width: 900px;
+	margin-left: -30px;
+}
+#window2{
+	height: 200px;
+	width: 900px;
+	position: relative;
+	top: -300px;
+	right: 100px;
+	position: fixed;
+	top:55px;
+	margin-right: 50px; 
+}
+
+.king{
+	position: fixed;
+}
+#gu{
+	text-decoration-style: none;
+}
+button{
+	width: 120px;
+background-color: black;
+color:white;
+	font-size:20px;
+	font-weight: bold;
+	border:none;
+}

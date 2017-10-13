@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ドラクエ風エンディング前</title>
+        <link rel="stylesheet" type="text/css" href="kinodoku.css">
+		
+		
+        <script src="../jquery-2.1.3.min.js"></script>
+        <script>
+		function sound(){
+		// [ID:sound-file]の音声ファイルを再生[play()]する
+	document.getElementById( 'sound-file' ).play();
+};
+		//呪い効果音を再生するnoroi()
+		function noroi(){
+		document.getElementById('noroi').play();
+};
+			
+		function level(){
+		document.getElementById('level').play();
+};
+			
+$(function(){
+ 
+	//カーソル音を鳴らす
+	$('.text').mouseover(function(){
+		document.getElementById("sound-file").currentTime = 0;
+		document.getElementById("sound-file").play();
+	});
+
+	//呪い効果音を再生するクリックイベント
+	$('.okinodoku').click(function(){
+		document.getElementById("noroi").currentTime = 0;
+		document.getElementById("noroi").play();
+	});
+	
+	//ぼうけんをするをクリックしたらdoublewindowが開くイベント
+	$('.boken').click(function(){
+		$(".doublebox").css("visibility","visible");
+});
+});
+		</script>
+</head>
+
+<body>
+<audio id="sound-file" src="sound/cursor.wav" preload="auto"></audio>
+<div id="intro">
+	<div class="answer" style="visibility:hidden;">
+		<ul>
+			<li class="button"><a onClick="sound();" href="../DQ/%E5%90%88%E6%A0%BC.html" target="_blank"><span class="text"><span class="mark">▶︎</span>はい</span></a></li>
+			<li class="button"><a onClick="sound();" href="#q2"><span class="text"><span class="mark">▶︎</span>いいえ</span</a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="monolog">
+	<a href="#e2">
+	<audio id="sound-file" src="sound/cursor.wav" preload="auto"></audio>
+	<audio id="level" src="sound/levelup.wav" preload="auto"></audio>
+	
+	<p class="texts";>じーずは授業で習ったjavascriptを使い、<br>
+	突然のじゃんけんゲームに勝つことができた。</p>
+	<p class="blinking">▼</p></a></div>
+</div>
+
+
+<div id="e2" class="question">
+<div class="answer" style="visibility:hidden;">
+		<ul>
+			<li class="button"><a onClick="sound();" href="../DQ/%E5%90%88%E6%A0%BC.html" target="_blank"><span class="text"><span class="mark">▶︎</span>はい</span></a></li>
+			<li class="button"><a onClick="sound();" href="#q2"><span class="text"><span class="mark">▶︎</span>いいえ</span</a></li>
+			
+		</ul>
+	</div>
+	<div class="monolog" onclick="level()">
+	<a href="#e3">
+	<p class="texts">しかし、卒業までの険しいカリキュラムは<br>
+	まだ始まったばかりだ。</p>
+	<p class="blinking" >▼</p></a></div>
+</div>
+
+
+<div id="e3" class="question">
+<div class="answer" style="visibility:hidden;">
+		<ul>
+			<li class="button"><a onClick="sound();" href="../DQ/%E5%90%88%E6%A0%BC.html" target="_blank"><span class="text"><span class="mark">▶︎</span>はい</span></a></li>
+			<li class="button"><a onClick="sound();" href="#q2"><span class="text"><span class="mark">▶︎</span>いいえ</span</a></li>
+			
+		</ul>
+	</div>
+	<div class="monolog">
+	<a href="#e4">
+	<p class="texts">来週も再来週も仕事の合間や寝る間を削って<br>戦い続けなければならない。
+	</p>
+	<p class="blinking">▼</p></a></div>
+</div>
+
+
+<div id="e4" class="question">
+<div class="answer" style="visibility:hidden;">
+		<ul>
+			<li class="button"><a onClick="sound();" href="../DQ/%E5%90%88%E6%A0%BC.html" target="_blank"><span class="text"><span class="mark">▶︎</span>はい</span></a></li>
+			<li class="button"><a onClick="sound();" href="#q2"><span class="text"><span class="mark">▶︎</span>いいえ</span</a></li>
+			
+		</ul>
+	</div>
+	<div class="monolog">
+	<a href="../ending.html">
+	<p class="texts">これからも様々な課題が待ち受けている。<br>
+	転職や起業を夢見るジーズ生の眠れない日々はまだまだ続く
+	</p>
+	<p class="blinking">▼</p></a></div>
+</div>
+
+	
+
+</body>
+</html>

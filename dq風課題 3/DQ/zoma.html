@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%9399.css">
+    
+<link rel="stylesheet" href="kinodoku.css">
+<title>GCP</title>
+<script type="text/javascript">
+function myGame(){
+myNumber = document.getElementById("mySelect").selectedIndex;
+hisNumber = 2;
+
+if( hisNumber == 0 ){
+hisHand = "グー";
+}
+if( hisNumber == 1 ){
+hisHand = "チョキ";
+}
+if( hisNumber == 2 ){
+hisHand = "パー";
+}
+
+if( myNumber - hisNumber == -2 ){
+judge = "じーずの 負け";
+}
+if( myNumber - hisNumber == -1 ){
+judge = "じーずの 勝ち";
+}
+if( myNumber - hisNumber == 0 ){
+judge = "両者の 引き分け";
+}
+if( myNumber - hisNumber == 1 ){
+judge = "じーずの 負け";
+}
+if( myNumber - hisNumber == 2 ){
+judge = "じーずの 勝ち";
+}
+
+document.getElementById("message1").innerHTML = "ゾーマのこうげき "+hisHand;
+document.getElementById("message2").innerHTML = "勝敗の結果は "+judge;
+}
+	</script>
+<script src="../jquery-2.1.3.min.js"></script>
+<!--<script src="../js/battle.js"></script>-->
+<script>
+		function sound(){
+		// [ID:sound-file]の音声ファイルを再生[play()]する
+	document.getElementById( 'sound-file' ).play();
+};
+		//呪い効果音を再生するnoroi()
+		function noroi(){
+		document.getElementById('noroi').play();
+};
+		function battle(){
+			document.getElementById('battle').play();
+		}
+	
+	function itetsuku(){
+	document.getElementById('itetsuku').play();
+	}
+
+			
+$(function(){
+ 
+	//カーソル音を鳴らす
+	$('.text').mouseover(function(){
+		document.getElementById("sound-file").currentTime = 0;
+		document.getElementById("sound-file").play();
+	});
+
+	//呪い効果音を再生するクリックイベント
+	$('.okinodoku').click(function(){
+		document.getElementById("noroi").currentTime = 0;
+		document.getElementById("noroi").play();
+	});
+	
+	//たたかうをクリックしたらdoublewindowが開くイベント
+	$('#attack').click(function(){
+		$("#menu").css("visibility","visible");
+});
+	$('#gu').click(function(){
+		$("#window2").html(mygame());
+		
+	});
+});
+		</script>
+</head>
+
+<body>
+<audio id="sound-file" src="../DQ/sound/cursor.wav" preload="auto"></audio>
+<audio id="sound-file" src="../DQ/sound/itetsuku.wav" preload="auto"></audio>
+<audio id="itetsuku" src="../DQ/sound/itetsuku.wav"></audio>
+
+<audio src="../DQ/%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%203%20-%20%E5%8B%87%E8%80%85%E3%81%AE%E6%8C%91%E6%88%A6%20(Zoma%20Song)%20%E3%83%95%E3%82%A1%E3%83%9F%E3%82%B3%E3%83%B3%E9%9F%B3%E6%BA%90.mp3" autoplay></audio>
+
+
+<header>
+	<div class="hp">
+		<table>
+			<tr><th>じーず</th></tr>
+			<tr><td>HP:</td> <td>31</td></tr>
+			<tr><td>MP:</td> <td>0</td></tr>
+			<tr><th>ゆ:</th> <td>LV.3</td></tr>
+		</table>
+<!--		<img src="../DQ/img/%E5%8B%87%E8%80%85.png">-->
+	</div>
+</header>
+<div id="battlefield"><a href="finish.html">
+<img src="../DQ/img/zo-ma.png" class="king">
+<!--<div id="GK3"></div>-->
+<div class="monolog" id="window2">
+<div id="message1">
+ゾーマのこうげき
+</div>
+<br>
+<div id="message2">
+勝敗の結果は ？
+	</div></a>
+	
+	<div id="hadou" onclick="itetsuku();" style="color:red;">【いてつく波動】</div>
+
+
+	
+			</div>
+
+</div>
+
+<div id="menu0" class="hp">
+<ul>
+	<li id="attack" class="text" onclick="sound();"><span class="text"></span><span class="mark">▶︎</span>たたかう</li>
+	<li id="nigeru" class="text" onclick="sound();"><span class="mark">▶︎</span>にげる</li>
+	<li id="bougyo" class="text" onclick="sound();"><span class="mark">▶︎</span>ぼうぎょ</li>
+	<li id="item" class="text" onclick="sound();"><span class="mark">▶︎</span>どうぐ</li>
+</ul>
+	</div>
+
+
+<div id="menu" class="hp">
+<!--
+<ul>
+	<li><button type="button" id="gu" class="text" onclick="sound();"><span class="mark">▶︎</span><option>グー</option></button></li>
+	<li id="choki" class="text" onclick="sound();"><span class="mark">▶︎</span>チョキ</li>
+	<li id="pa"  class="text" onclick="sound();"><span class="mark">▶︎</span>パー</li>
+	<li id="back" class="text" style="font-size:16px;margin-top:15px;"><span class="mark">▶︎</span>もどる</li>
+</ul>
+
+-->
+<form style="position:absolute; left:10px; top:70px">
+<select id="mySelect">
+<option>グー</option>
+<option>チョキ</option>
+<option>パー</option>
+</select>
+<input type="button" value="こうげき" onclick="myGame()">
+</form>
+
+	<span id="back" class="text" style="font-size:16px;margin-top:15px;">もどる</span>
+	</div>
+<!--<img src="../DQ/img/%E5%8B%87%E8%80%85.png">-->
+
+<!--
+
+<img src="../DQ/img/%E3%82%B0%E3%83%BC2.png" class="down">
+<img src="../DQ/img/%E3%83%81%E3%83%A7%E3%82%AD.gif" class="down">
+<img src="../DQ/img/%E3%83%91%E3%83%BC.png" class="down">
+</span>
+-->
+<!--<input type="button" value="攻撃" onclick="myGame()">-->
+
+	<script>
+$(function(){
+	$("#back").click(function(){
+		$("#menu").css("visibility","hidden");
+});
+
+	
+});
+
+
+
+	</script>
+
+</body>
+</html>
