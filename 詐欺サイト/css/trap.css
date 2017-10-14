@@ -1,0 +1,25 @@
+.blackbox
+{height:450px; width:850px;
+	background-color:black;
+}
+.blackbox:hover{
+	opacity: 0.9;
+}
+
+
+img {
+	position: absolute;
+	top: 500px;
+}
+
+
+.trapbtn button{
+	font-weight: bold;
+	padding: 10px 0;
+	background-color:dodgerblue;
+	border-radius: 5px;
+	
+	
+}
+
+

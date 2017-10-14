@@ -1,0 +1,432 @@
+#description{
+	float: right;
+	font-size: 14p;
+	margin-right: 100px;
+	margin-bottom: 24px;
+}
+
+bodybody{
+	width: 100%;
+}
+
+#background h1{
+	width: 750px;
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+	position: absolute;
+	top: 450px;
+	right: 250px;
+	font-size: 50px;
+}
+
+#begin{
+	width: 650px;
+	color: white;
+	vertical-align: middle;
+	position: absolute;
+	top: 590px;
+	right: 300px;
+	font-size: 29px;
+}
+
+.LAB2{
+	height: 240px;
+	width: 400px;
+	border: solid white;
+}
+
+.LAB2 p{
+	display: block;
+	text-align: center;
+}
+.LAB2 h5{
+	text-align: center;	
+}
+#COURCE h3{
+	text-align: center;
+}
+#COURCE h4{
+	text-align: center;
+}
+
+
+#COURCE table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ACADEMY{
+	border: solid white;
+	height:240px;
+	width:400px;
+}
+.ACADEMY h5{
+	text-align: center;
+}
+.ACADEMY p{
+	text-align: center;
+}
+
+#GALLERY{
+	 background-color: gold;
+	text-align: center;
+}
+
+#Photos{
+	position: relative;
+	left: 350px;
+}
+#GALLERY h4{color: white;}
+
+
+#news1 table{
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+}
+#news1 td{
+ padding: 10px 10px;
+}
+
+#news2{
+	text-align: right;	
+	margin-right: 100px;
+}
+
+.shokai{
+	position: relative;
+	left: 270px;
+	
+}
+
+/*
+#NEWS
+{
+color: gold;	
+text-align: center;	
+}
+*/
+
+#NEWS h3{
+	color: gold;	
+	text-align: center;
+	font-size: 21px;
+	margin-top: 60px;
+}
+
+#NEWS h4{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 60px;
+}
+
+#NEWS section{
+	text-align: right;
+}
+
+
+#Photos{
+	text-align: auto 0;
+}
+
+.forms{
+	text-align: center;
+}
+.linkbtn{
+	margin:0 auto; 
+}
+
+#Feature{
+	text-align: 0 auto;
+	
+}
+
+#Feature h2{
+	color: white;
+	text-align: center;	
+	padding-top: 50px;
+	
+}
+
+#Feature h4{
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.tokucho{
+	margin: 0 auto;
+	padding-left: 20px;
+	width: 100%;
+}
+.center{}
+.center:hover{
+	-webkit-animation: spin 2.5s linear ;
+    animation: spin 2.5s linear ;
+}
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+.empty{
+	width: 300px;
+	visibility: hidden;
+}
+.right{float: right;
+margin-right: 260px;}
+.right:hover{
+	-webkit-animation: spin 3.5s linear ;
+    -animation: spin 3.5s linear ;
+}
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+.left:hover{
+	-webkit-animation: spin 1.5s linear ;
+    animation: spin 1.5s linear ;
+}
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+.tokucho img{
+	position: relative;
+	left: 60px;
+	padding-bottom: 70px;
+	
+}
+
+#COURCE{
+	padding-top: 70px;
+}
+
+#ENTRY{
+	background-color:gold;
+}
+#ENTRY{
+	text-align: center;
+}
+
+#ENTRY h4{
+	color: white;
+	text-align: center;	
+}
+
+.button{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+introduction{
+	margin-top: 45px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	
+	
+}
+
+
+#photos{
+	
+}
+
+
+#23{
+	padding-top: 45px;
+	padding-top: 45px;
+	text-align: center;
+}
+
+#24{
+	padding-bottom: 70px;
+	text-align: center;
+	color: white
+}
+
+#photo2{
+	display: inline
+		margin-top: 70px;
+}
+
+#23 {
+	text-align: center;
+	color: white;
+    }
+
+.cheese{
+	background-color: grey;
+	
+}
+
+#foot{
+	position: relative;
+	left: 500px;
+}
+
+/*
+色
+- rgba
+    -Red
+    -Green
+    -Blue
+    -Alpha
+
+概要　
+
+
+知識
+
+範囲
+
+仕様　実装状況
+
+
+
+
+
+擬似クラス
+:first-child
+
+
+
+/*linot(.target)*/
+/*li:empty*/
+/*input[type="text"]:enabled*/
+/*input[type="text"]:disabled
+
+input[type="checkbox"]:checked + label
+
+{
+	background: violet;
+}
+
+opp
+.p{
+    font-size:300%;
+}
+
+.title
+{
+    font-size:300%;
+}
+
+
+.AAA
+{
+    float: left;
+    
+}
+
+/*　擬似クラス
+
+どこにフォーカスするか
+
+li:last-child　最後
+li:nth-child(3)　３番目
+li:nth-child(even)　偶数
+li:nth-child(odd)　奇数
+li:nth-child(3n+1)
+li:nth-last-child(4)　最後から４番目
+li:only-child　子要素がひとつしかないところにフォーカス
+
+li:first-of-type
+p:last-of-type
+p:nth-of-type(3)
+p:nth-last-of-type(4)
+h2:only-of-type
+
+
+角丸
+
+
+div{
+	width: 20px;
+	height: 200px:
+	background: skyblue;
+	url(`sheep.jpg`);
+	
+body{margin: 0;
+	width: 100%;
+	height: 130px;
+	background: url(`cafe.jpg`)
+	no-repeat skyblue;
+	/*background-size: 50% 100%;
+	background-size: contain;
+		background-position; 50% 50%;
+	}
+	
+	body{
+		background-color: silver;
+		background-image: url(`bg.png`);
+		background-repeat: no-repeat;
+		/* background-repeat: repeat-x; 
+		   background-position: 10px 10px;
+		   background-position: top center;
+		   background-attachment: scroll;
+		   background-attachment: fixed;固定
+		
+		background: url(`bg.png`) no-repeat
+		fixed;
+		
+		
+		display:
+		block
+		inline
+		list-item
+		inline-block
+		none
+		
+		h1,p,span,a
+		{
+		border: 1px solid #ddd;
+	}
+		
+		h1,p{
+		width: 120px;
+		display: inline;
+		display: inline-block;
+	}
+		
+		span{
+		display: none;
+	}
+		
+		
+		
+	}
+	
+header{
+		width: 100%;
+		height: 200px;
+		background:
+			url(`0001.gif`)no-repeat 0 0;
+			url(`0002.gif`)no-repeat 30px 30px;
+		    url(`0003.gif`)no-repeat bottom 
+			right;
+	}
+	
+	/*
+	線形グラデーション
+	
+	div{
+		width: 200px;
+		height: 200px;
+		background-gradient(skyeblue);
+		background-image: liner-gradient(to
+	top left, skyblue, blue);
+	}
+	
+	/*border-radius: 10px 20px 30px; 
+	border-radius: 50%:
+	
+
+	*/
+	
+	
+}
+

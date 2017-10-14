@@ -1,0 +1,137 @@
+body{
+	background-color: black;
+	color: white;
+	height: 2000px;
+}
+
+#intro{
+	visibility: hidden;
+	animation-name: intro;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+}
+@keyframes intro{
+	0%{visibility: hidden;}
+	100%{visibility: visible;}
+	
+}
+
+a {
+	text-decoration:none;
+	color: white;
+}
+
+#trap{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.texts{
+	position:
+}
+
+.question{
+	padding-top: 15px;
+}
+
+.answer{
+	border:solid 4px white;
+	border-radius: 5px;
+	width: 120px;
+	height: 100px;
+	margin-left: 600px;;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+	right: -200px;
+	font-size: 20px;
+	font-weight: 600;
+}
+ul li{
+list-style: none;
+position: relative;
+	right: 20px;
+}
+ul li:hover {
+	opacity: 0.9;
+}
+.mark{
+	opacity: 1;
+	position: relative;
+	right: 10px;
+}
+
+
+
+.mark{
+	opacity: 0;
+}
+.mark:hover{
+	opacity: 1.0;
+}
+
+.monolog{
+	font-size: 29px;
+	margin: 340px auto;
+	border:solid 4px white;
+	border-radius: 5px;
+	vertical-align: bottom;
+	width:650px;
+	height: 170px;
+	position:relative;
+	top:-30px;
+}
+.doublebox{
+	visibility: hidden;
+	border-radius: 8px;
+	border:solid 4px white;
+	width: 650px;
+	font-size: 29px;
+	position: relative;
+	top:-490px;
+	right: -540px;
+	opacity: 1;
+	background-color: black;
+}
+
+.blinking {
+	position: relative;
+	top: -40px;
+    -webkit-animation: 0.3s linear 0s alternate none infinite running blink;
+    -moz-animation: 0.5s linear 0s alternate none infinite running blink;
+    animation: 0.5s linear 0s alternate none infinite running blink;
+}
+@-webkit-keyframes blink {
+    0% { opacity: 0; }
+    19.9% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 0; }
+    19.9% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { opacity: 1; }
+}
+@keyframes blink {
+    0% { opacity: 0; }
+    19.9% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+#login{position:relative;top: -100px; }
+
+
+p{
+	text-align: center;
+position: relative;	
+bottom: 10px;
+}
+
+
+#q2{
+	position:relative;
+	top:-30px;
+}

@@ -1,0 +1,77 @@
+body{
+	text-align: center;
+	background-color: black;
+	color: red;
+}
+
+pho{
+	width: 500px;
+	height: 500px;
+}
+
+.photo2{
+	width: 1000px;
+	display: inline;
+}
+,photo2 img{
+	
+}
+
+.cheese{
+
+}
+
+h1{
+	color: red;
+}
+h1 img{
+	height: 100px;
+	position: relative;
+	top: 50px;
+}
+
+.row{
+	text-align: center;
+}
+
+.title{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.caution{
+	text-align: center;
+}
+
+.caution2{
+	text-align: center;
+	color: red;
+}
+
+.strong{
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.admission a{
+	text-decoration: none;
+	height: 50px;
+	width: 300px;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+.admission a:hover{
+	color: red;
+	opacity: 0.7;
+}
+
+.admission{
+	background-color: gold;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.8em;
+}
